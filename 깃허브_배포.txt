@@ -1,0 +1,51 @@
+깃허브 배포
+
+1. 프로젝트 공백없이 폴더명은 짧게만든다.
+2. VS CODE 준비(git bash)
+3. 깃설정
+git init
+ls -la;
+
+git config user.name 'sj2532nb'
+git config user.email 'sj2532nb@gmail.com'
+git config --global http"https://kimdohuii.com"
+
+git config user.name
+git config user.email
+
+git remote add origin https://github.com/sj2532nb/kurly_java_react.git
+git remote -v
+
+git add .
+git commit -m '마켓컬리 자바기반 리액트 프로젝트'
+git push origin master
+
+깃허브 
+리파지토리 화면 새로고침
+  
+패키지.제이슨
+  "homepage": "https://myusername(아이디).github.io/my-app(리파지토리명)",  // 예시
+
+패키지.제이슨에 추가
+  "homepage": "http://www.dohuii.com"
+
+  npm install --save gh-pages
+  npm install gh-pages  // --save 빼도 가능
+
+
+"predeploy": "npm run build",
+"deploy": "gh-pages -b master -d build"
+
+npm run deploy
+
+깃헙
+
+Setting
+
+pages
+
+GitHub pages
+아래에
+옵션
+셀렉트 박스 master 선택
+오른쪽 save 클릭
